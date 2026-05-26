@@ -28,16 +28,6 @@
 
 MOSS-TTS-Nano is an open-source **multilingual tiny speech generation model** from [MOSI.AI](https://mosi.cn/#hero) and the [OpenMOSS team](https://www.open-moss.com/). With only **0.1B parameters**, it is designed for **realtime speech generation**, can run directly on **CPU without a GPU**, and keeps the deployment stack simple enough for local demos, web serving, and lightweight product integration.
 
-## MOSS-TTS 2.0 Feedback Collection
-
-MOSS-TTS 2.0 is coming soon. To better optimize model capabilities and product experience, we are collecting feedback and suggestions from TTS users. Please take 2-3 minutes to fill out the [requirements collection form](https://acnc6zeentra.feishu.cn/share/base/form/shrcnyAe1LwqKWjCSuW4wiZ2Hef). Feature requests of any kind are welcome.
-
-<p align="center">
-  <a href="https://acnc6zeentra.feishu.cn/share/base/form/shrcnyAe1LwqKWjCSuW4wiZ2Hef">
-    <img src="./assets/images/moss_tts_2_requirements_gathering.jpg" width="360" alt="MOSS-TTS 2.0 requirements collection QR code" />
-  </a>
-</p>
-
 [demo_video.mp4](https://github.com/user-attachments/assets/25aca215-0bd7-4d0c-be95-8d1f6737aec8)
 
 ## News
@@ -57,25 +47,35 @@ MOSS-TTS 2.0 is coming soon. To better optimize model capabilities and product e
 
 ## Contents
 
-- [News](#news)
-- [Demo](#demo)
-- [Introduction](#introduction)
-  - [Main Features](#main-features)
-- [Supported Languages](#supported-languages)
-- [Quickstart](#quickstart)
-  - [Environment Setup](#environment-setup)
-  - [Voice Clone with `infer.py`](#voice-clone-with-inferpy)
-  - [Local Web Demo with `app.py`](#local-web-demo-with-apppy)
-  - [ONNX CPU Inference](#onnx-cpu-version)
-  - [Export TTS-only ONNX Weights](#export-tts-only-onnx-weights)
-  - [CLI Command: `moss-tts-nano generate`](#cli-command-moss-tts-nano-generate)
-  - [CLI Command: `moss-tts-nano serve`](#cli-command-moss-tts-nano-serve)
-  - [Finetuning](#finetuning)
-- [MOSS-Audio-Tokenizer-Nano](#moss-audio-tokenizer-nano)
-- [MOSS-TTS Family](#moss-tts)
-- [License](#license)
-- [Citation](#citation)
-- [Star History](#star-history)
+- [MOSS-TTS-Nano](#moss-tts-nano)
+  - [News](#news)
+  - [Demo](#demo)
+  - [Contents](#contents)
+  - [Introduction](#introduction)
+    - [Main Features](#main-features)
+  - [Supported Languages](#supported-languages)
+  - [Quickstart](#quickstart)
+    - [Environment Setup](#environment-setup)
+      - [Using Conda](#using-conda)
+    - [Voice Clone with `infer.py`](#voice-clone-with-inferpy)
+    - [Local Web Demo with `app.py`](#local-web-demo-with-apppy)
+    - [ONNX CPU Inference](#onnx-cpu-inference)
+    - [ONNX Local Web Demo with `app_onnx.py`](#onnx-local-web-demo-with-app_onnxpy)
+    - [Export TTS-only ONNX Weights](#export-tts-only-onnx-weights)
+    - [CLI Command: `moss-tts-nano generate`](#cli-command-moss-tts-nano-generate)
+    - [CLI Command: `moss-tts-nano serve`](#cli-command-moss-tts-nano-serve)
+    - [Finetuning](#finetuning)
+  - [MOSS-Audio-Tokenizer-Nano](#moss-audio-tokenizer-nano)
+    - [Introduction](#introduction-1)
+    - [Model Weights](#model-weights)
+    - [Evaluation Metrics](#evaluation-metrics)
+    - [LibriSpeech Speech Metrics (MOSS-Audio-Tokenizer-Nano vs. Open-source Tokenizers)](#librispeech-speech-metrics-moss-audio-tokenizer-nano-vs-open-source-tokenizers)
+  - [MOSS-TTS Family](#moss-tts-family)
+    - [Introduction](#introduction-2)
+    - [Released Models](#released-models)
+  - [License](#license)
+  - [Citation](#citation)
+  - [Star History](#star-history)
 
 ## Introduction
 
