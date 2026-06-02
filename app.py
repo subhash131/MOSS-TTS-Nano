@@ -1074,8 +1074,8 @@ def _render_index_html(
             <audio id="prompt-audio-preview" controls hidden></audio>
             <div id="prompt-audio-source" class="meta">Using the selected demo prompt speech.</div>
             <div class="prompt-audio-actions">
-              <button id="choose-prompt-audio-btn" class="secondary" type="button" hidden>选择文件</button>
-              <button id="clear-prompt-audio-btn" class="secondary" type="button" hidden>使用 Demo 音频</button>
+              <button id="choose-prompt-audio-btn" class="secondary" type="button" hidden>Select File</button>
+              <button id="clear-prompt-audio-btn" class="secondary" type="button" hidden>Use Demo Audio</button>
             </div>
           </div>
         </div>
@@ -1314,7 +1314,7 @@ def _render_index_html(
       return `${APP_BASE}/api/demo-prompt-audio/${encodeURIComponent(demoId)}`;
     }
 
-    function showPromptAudioFilePicker(message = "选择文件 | 未选择任何文件") {
+    function showPromptAudioFilePicker(message = "Select File | No File Selected") {
       promptAudioPreview.pause();
       promptAudioPreview.removeAttribute("src");
       promptAudioPreview.load();
